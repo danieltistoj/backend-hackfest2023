@@ -1,5 +1,9 @@
 import express from 'express';
 import morgan from 'morgan';
+
+//Data Base
+
+import connectMongoDB from '../store/mongodb.js';
 //Herlpers
 
 //Models
@@ -16,6 +20,7 @@ class Server{
         this._name = config.name
         this.setMiddlewares()
         this.setRoutes()
+        connectMongoDB()
     }
 
 setMiddlewares() {
