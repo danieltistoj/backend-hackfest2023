@@ -1,0 +1,31 @@
+{
+  "name": "backend-hackfest2023",
+  "version": "1.0.0",
+  "description": "Servicio backend para el hackfest2023",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danieltistoj/backend-hackfest2023.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danieltistoj/backend-hackfest2023/issues"
+  },
+  "homepage": "https://github.com/danieltistoj/backend-hackfest2023#readme",
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
