@@ -4,7 +4,7 @@
   <div>
     <img  height="500" width="500" src="https://github.com/danieltistoj/backend-hackfest2023/assets/42653664/7c7ca792-0a95-4a5d-b03a-a67399ed7ffb">
   </div>
-<h1>Tecnologías</h1>
+<h1>Technologies</h1>
 </div>
 <div style="display: inline_block" align="center">
   <img align="center" alt="Rafa-Csharp" height="50" width="200" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
@@ -43,3 +43,11 @@ npm run dev
 ```json
 "nodemon": "^2.0.22"
 ```
+
+
+<div align="center">
+<h1>Thanks for watching</h1>
+   <div>
+    <img  height="500" width="500" src="https://github.com/danieltistoj/backend-hackfest2023/assets/42653664/2d251ccc-2256-4aa7-9eab-25e0f340eb84">
+  </div>
+</div>
