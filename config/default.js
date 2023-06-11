@@ -7,5 +7,8 @@ export const config = {
         port: process.env.PORT || 4000,
         hostname: process.env.HOSTNAME || 'localhost',
         name: process.env.NAME || 'Backend-HackFest'
+    },
+    db:{
+        mongo_uri:process.env.MONGO_URI
     }
 }

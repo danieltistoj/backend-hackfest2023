@@ -1,15 +1,37 @@
-export class User{
-    constructor(user){
-        this.email = user.email
-        this.emailVerified = false
-        this.phoneNumber = user.phoneNumber
-        this.password = user.password
-        this.displayName = user.displayName
-        this.disable = false
+import mongoose from 'mongoose';
+
+const userSchema = new mongoose.Schema({
+    name:{
+        type:String,
+        required:true,
+        trim:true,
+    },
+    password:{
+        type:String,
+        required:true,
+        trim:true,
+        //select: false,
+    },
+    email:{
+        type:String,
+        required:true,
+        trim:true,
+        undefined:true,
+    },
+    profilePhoto:{
+        type:String,
+        default: "",
+        required:false,
+        trim:true,
+    },
+    matchList:{
+        type: Array,
+        default:[],
+        required:false,
+        trim:true,
     }
-    /*
-    encryptPassword(password, hashPassword){
-        this.password = hashPassword(password)
-    }
-    */
-}
+});
+
+const User = mongoose.model('User',userSchema)
+export default User;
+
