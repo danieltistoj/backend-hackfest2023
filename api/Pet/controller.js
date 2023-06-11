@@ -15,11 +15,13 @@ export class controllerPet{
             var newPet = new this._model(body)
             await newPet.save()
             if(files?.image){
+                
                 const result= await
                 cloudinary.uploadImage(files.image.tempFilePath)   
+                console.log(result)
                 newPet.publicId= result.public_id
                 newPet.profilePhoto = result.secure_url
-                await newPet.save()
+                newPet = await newPet.save()
                 await fs.unlink(files.image.tempFilePath);
             }
             return await newPet
