@@ -13,6 +13,23 @@ export class controllerUser{
         } catch (error) {
             return error
         }
+    }
+    async allUsers(){
+        try {
+            const users = await this._model.find();
+            return users
+        } catch (error) {
+            return error
         }
+    }    
+    async getUserByName(name){
+        try {
+            const user = await this._model.findOne({name});
+            return user
+        } catch (error) {
+            return error
+        }
+    }
+
 
 }
