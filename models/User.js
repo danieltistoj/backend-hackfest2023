@@ -29,6 +29,12 @@ const userSchema = new mongoose.Schema({
         default:[],
         required:false,
         trim:true,
+    },
+    phone:{
+        type:String,
+        default: "",
+        required:false,
+        trim:true,
     }
 });
 

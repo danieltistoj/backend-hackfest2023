@@ -32,9 +32,16 @@ npm run dev
 </div>
 
 ```json
+    "body-parser": "^1.20.2",
+    "cloudinary": "^1.37.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
-    "morgan": "^1.10.0"
+    "express-fileupload": "^1.4.0",
+    "fs-extra": "^11.1.1",
+    "mongoose": "^6.6.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1"
 ```
 <div align="center">
 <h1>DevDependencies</h1>
@@ -43,6 +50,127 @@ npm run dev
 ```json
 "nodemon": "^2.0.22"
 ```
+
+
+<div>
+  <div align="center">
+ <h1>Documentation</h1>
+ </div>
+ <p>Host</p>
+
+<ul>
+<li><strong> DEV: </strong><code>https://backend-hackfest2023-production.up.railway.app</code></li>
+<li><strong> Local: </strong><code>http://localhost:4000</code></li>
+</ul> 
+  
+ <div>
+ <h2>User</h2>
+ <h3>Create User</h3>
+      <p>Creates a new user.</p>
+ <ul>
+ <li><strong>Method:</strong> POST</li>
+ <li><strong>URL:</strong> <code>{{host}}/api/v1/user/create-user</code></li>
+  </ul>
+ <p>Request body:</p>
+
+<pre>
+<code>
+{
+    "name": "Ejemplo",
+    "password": "MyPassword",
+    "email": "nuevo@gmail.com"
+}
+</code>
+</pre>
+<h3>All Users</h3>
+<p>Retrieves all users.</p>
+
+<ul>
+<li><strong>Method:</strong> GET</li>
+<li><strong>URL:</strong> <code>{{host}}/api/v1/user/all-users</code></li>
+</ul>
+
+<h3>Get User By Name</h3>
+<p>Retrieves a user by their name.</p>
+<ul>
+<li><strong>Method:</strong> GET</li>
+<li><strong>URL:</strong> <code>{{host}}/api/v1/user/getUserByName/{name}</code></li>
+<li>Replace <code>{name}</code> with the user's name.</li>
+</ul>
+<h3>Get User By Id</h3>
+<p>Retrieves a user by their ID.</p>
+<ul>
+<li><strong>Method:</strong> GET</li>
+<li><strong>URL:</strong> <code>{{host}}/api/v1/user/getUserById/{id}</code></li>
+<li>Replace <code>{id}</code> with the user's ID.</li>
+</ul>
+<h3>Update User By Id</h3>
+<p>Updates a user by their ID.</p>
+<ul>
+<li><strong>Method:</strong> PUT</li>
+<li><strong>URL:</strong> <code>{{host}}/api/v1/user/updateUserById/{id}</code></li>
+<li>Replace <code>{id}</code> with the user's ID.</li>
+</ul>
+ <p>Request body:</p>
+ <pre>
+ <code>
+{
+    "email": "correo2345@gmail.com"
+}
+</code>
+</pre>
+<h3>Delete User By Id</h3>
+<p>Deletes a user by their ID.</p>
+<ul>
+<li><strong>Method:</strong> DELETE</li>
+<li><strong>URL:</strong> <code>{{host}}/api/v1/user/deleteUserById/{id}</code></li>
+<li>Replace <code>{id}</code> with the user's ID.</li>
+</ul>
+
+<h2>Pet</h2>
+
+<h3>Create Pet</h3>
+
+<p>Creates a new pet.</p>
+
+<ul>
+<li><strong>Method:</strong> POST</li>
+<li><strong>URL:</strong> <code> {{host}}/api/v1/pet/create-pet</code></li>
+</ul>
+<p>Request body:</p>
+<pre>
+<code>
+{
+    "name": "firulais",
+    "image": [file],
+    "race": "mestizo",
+    "age": "2 meses",
+    "sex": 1,
+    "description": "Es un perro muy amigable"
+}
+</code>
+</pre>
+ <p>If Postman is used, a form-data format must be used for this endpoint</p>
+<h3>All Pets</h3>
+<p>Retrieves all pets.</p>
+
+<ul>
+<li><strong>Method:</strong> GET</li>
+<li><strong>URL:</strong> <code> {{host}}/api/v1/pet/all-pet</code></li>
+</ul>
+
+<h2>Deployment</h2>
+
+<h3>User-deploy</h3>
+
+<p>These endpoints are available in the deployed version of the API.</p>
+
+<ul>
+<li><strong>Base URL:</strong> <code>https://backend-hackfest2023-production.up.railway.app/api/v1/user</code></li>
+</ul>
+<p>Please note that the deployed version may have different behavior or limitations compared to the local version.</p>  
+ </div>
+</div>
 
 
 <div align="center">
