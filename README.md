@@ -59,75 +59,75 @@ npm run dev
  <p>Host</p>
 
 <ul>
-<li><strong> DEV: </strong><code>https://backend-hackfest2023-production.up.railway.app</code></li>
+<li><strong> DEV: </strong><code>http://backend-hackfest2023-dev.up.railway.app</code></li>
 <li><strong> Local: </strong><code>http://localhost:4000</code></li>
 </ul> 
   
  <div>
  <h2>User</h2>
-   <h2>Modelo de Datos</h2>
-   <table>
+   <h2>Data Model</h2>
+    <table align="center">
         <tr>
-            <th>Campo</th>
-            <th>Tipo</th>
-            <th>Requerido</th>
-            <th>Recorte</th>
-            <th>Valor Predeterminado</th>
+            <th>Field</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Trim</th>
+            <th>Default Value</th>
         </tr>
         <tr>
             <td>name</td>
             <td>String</td>
-            <td>Sí</td>
-            <td>Sí</td>
+            <td>Yes</td>
+            <td>Yes</td>
             <td>-</td>
         </tr>
         <tr>
             <td>password</td>
             <td>String</td>
-            <td>Sí</td>
-            <td>Sí</td>
+            <td>Yes</td>
+            <td>Yes</td>
             <td>-</td>
         </tr>
         <tr>
             <td>email</td>
             <td>String</td>
-            <td>Sí</td>
-            <td>Sí</td>
-            <td>-</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Undefined</td>
         </tr>
         <tr>
             <td>profilePhoto</td>
             <td>String</td>
             <td>No</td>
-            <td>Sí</td>
+            <td>Yes</td>
             <td>""</td>
         </tr>
         <tr>
             <td>publicId</td>
             <td>String</td>
             <td>No</td>
-            <td>-</td>
+            <td>No</td>
             <td>-</td>
         </tr>
         <tr>
             <td>matchList</td>
             <td>Array</td>
             <td>No</td>
-            <td>Sí</td>
+            <td>Yes</td>
             <td>[]</td>
         </tr>
         <tr>
             <td>phone</td>
             <td>String</td>
             <td>No</td>
-            <td>Sí</td>
+            <td>Yes</td>
             <td>""</td>
         </tr>
         <tr>
             <td>rol</td>
             <td>String</td>
-            <td>Sí</td>
-            <td>Sí</td>
+            <td>Yes</td>
+            <td>Yes</td>
             <td>""</td>
         </tr>
     </table>
@@ -194,62 +194,62 @@ npm run dev
 </ul>
 
 <h2>Pet</h2>
-    <h2>Modelo de Datos</h2>
-    <table>
+    <h2>Data Model</h2>
+    <table align="center">
         <tr>
-            <th>Campo</th>
-            <th>Tipo</th>
-            <th>Requerido</th>
-            <th>Recorte</th>
-            <th>Valor Predeterminado</th>
+            <th>Field</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Trim</th>
+            <th>Default Value</th>
         </tr>
         <tr>
             <td>name</td>
             <td>String</td>
-            <td>Sí</td>
-            <td>Sí</td>
+            <td>Yes</td>
+            <td>Yes</td>
             <td>-</td>
         </tr>
         <tr>
             <td>profilePhoto</td>
             <td>String</td>
             <td>No</td>
-            <td>-</td>
+            <td>No</td>
             <td>""</td>
         </tr>
         <tr>
             <td>publicId</td>
             <td>String</td>
             <td>No</td>
-            <td>-</td>
+            <td>No</td>
             <td>-</td>
         </tr>
         <tr>
             <td>race</td>
             <td>String</td>
-            <td>Sí</td>
-            <td>Sí</td>
+            <td>Yes</td>
+            <td>Yes</td>
             <td>-</td>
         </tr>
         <tr>
             <td>age</td>
             <td>String</td>
-            <td>Sí</td>
-            <td>Sí</td>
+            <td>Yes</td>
+            <td>Yes</td>
             <td>-</td>
         </tr>
         <tr>
             <td>sex</td>
             <td>Number</td>
-            <td>Sí</td>
-            <td>Sí</td>
+            <td>Yes</td>
+            <td>Yes</td>
             <td>-</td>
         </tr>
         <tr>
             <td>description</td>
             <td>String</td>
             <td>No</td>
-            <td>Sí</td>
+            <td>Yes</td>
             <td>-</td>
         </tr>
     </table>
@@ -290,7 +290,7 @@ npm run dev
 <p>These endpoints are available in the deployed version of the API.</p>
 
 <ul>
-<li><strong>Base URL:</strong> <code>https://backend-hackfest2023-production.up.railway.app/api/v1/user</code></li>
+<li><strong>Base URL:</strong> <code>http://backend-hackfest2023-dev.up.railway.app</code></li>
 </ul>
 <p>Please note that the deployed version may have different behavior or limitations compared to the local version.</p>  
  </div>
