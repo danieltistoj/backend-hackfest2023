@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-
+mongoose.set('strictQuery', false);
 const userSchema = new mongoose.Schema({
     name:{
         type:String,
@@ -24,10 +24,25 @@ const userSchema = new mongoose.Schema({
         required:false,
         trim:true,
     },
+    publicId:{
+        type:String
+    },
     matchList:{
         type: Array,
         default:[],
         required:false,
+        trim:true,
+    },
+    phone:{
+        type:String,
+        default: "",
+        required:false,
+        trim:true,
+    },
+    rol:{
+        type:String,
+        default: "",
+        required:true,
         trim:true,
     }
 });
