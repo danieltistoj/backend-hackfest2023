@@ -65,6 +65,72 @@ npm run dev
   
  <div>
  <h2>User</h2>
+   <h2>Modelo de Datos</h2>
+   <table>
+        <tr>
+            <th>Campo</th>
+            <th>Tipo</th>
+            <th>Requerido</th>
+            <th>Recorte</th>
+            <th>Valor Predeterminado</th>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>String</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td>String</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td>String</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>profilePhoto</td>
+            <td>String</td>
+            <td>No</td>
+            <td>Sí</td>
+            <td>""</td>
+        </tr>
+        <tr>
+            <td>publicId</td>
+            <td>String</td>
+            <td>No</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>matchList</td>
+            <td>Array</td>
+            <td>No</td>
+            <td>Sí</td>
+            <td>[]</td>
+        </tr>
+        <tr>
+            <td>phone</td>
+            <td>String</td>
+            <td>No</td>
+            <td>Sí</td>
+            <td>""</td>
+        </tr>
+        <tr>
+            <td>rol</td>
+            <td>String</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>""</td>
+        </tr>
+    </table>
  <h3>Create User</h3>
       <p>Creates a new user.</p>
  <ul>
@@ -128,7 +194,65 @@ npm run dev
 </ul>
 
 <h2>Pet</h2>
-
+    <h2>Modelo de Datos</h2>
+    <table>
+        <tr>
+            <th>Campo</th>
+            <th>Tipo</th>
+            <th>Requerido</th>
+            <th>Recorte</th>
+            <th>Valor Predeterminado</th>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>String</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>profilePhoto</td>
+            <td>String</td>
+            <td>No</td>
+            <td>-</td>
+            <td>""</td>
+        </tr>
+        <tr>
+            <td>publicId</td>
+            <td>String</td>
+            <td>No</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>race</td>
+            <td>String</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>age</td>
+            <td>String</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>sex</td>
+            <td>Number</td>
+            <td>Sí</td>
+            <td>Sí</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>description</td>
+            <td>String</td>
+            <td>No</td>
+            <td>Sí</td>
+            <td>-</td>
+        </tr>
+    </table>
 <h3>Create Pet</h3>
 
 <p>Creates a new pet.</p>
