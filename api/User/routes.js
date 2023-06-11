@@ -13,6 +13,7 @@ export class userRouter {
         this._router.get('/getUserById/:id', this.handleGetUserById.bind(this));
         this._router.put('/updateUserById/:id', this.handleUpdateUserById.bind(this));
         this._router.delete('/deleteUserById/:id', this.handleDeleteUserById.bind(this));
+        this._router.patch('/add-picture/:id', this.handleAddPictureUserById.bind(this));
     }
     async handleCreateUser(req, res) {
         try {
@@ -92,6 +93,16 @@ export class userRouter {
             const id = req.params.id
             
             const result = await this._controller.deleteUserById(id)
+            this._response.succes(req, res, result, this._httpcode.OK);
+        } catch (error) {
+            this._response.error(req, res, error, this._httpcode.BAD_REQUEST);
+        }
+    }
+    async handleAddPictureUserById(req, res) {
+        try {
+            const id = req.params.id
+            const file = req.files
+            const result = await this._controller.addPictureUserById(id, file)
             this._response.succes(req, res, result, this._httpcode.OK);
         } catch (error) {
             this._response.error(req, res, error, this._httpcode.BAD_REQUEST);

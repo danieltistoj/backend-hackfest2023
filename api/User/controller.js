@@ -1,3 +1,5 @@
+import cloudinary from '../../store/cloudinary.js'
+import fs from 'fs-extra'
 export class controllerUser{
     constructor(title, grade) {
         this._title = title
@@ -71,5 +73,27 @@ export class controllerUser{
             throw error
         }
     }
+
+    async addPictureUserById(id,files){
+        try {
+            var user = await this._model.findById(id)
+            if(files?.image){
+                const result= await
+                cloudinary.uploadImage(files.image.tempFilePath)   
+                console.log(result)
+                user.publicId= result.public_id
+                user.profilePhoto = result.secure_url
+                user = await user.save()
+                await fs.unlink(files.image.tempFilePath);
+            }
+            return {
+                message: "add picture successfully",
+                user: await this._model.findById(id)
+            }
+        } catch (error) {
+            throw error
+        }
+    }
+
     
 }
