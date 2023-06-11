@@ -59,5 +59,17 @@ export class controllerUser{
             throw error
         }
     }
+    async deleteUserById(id){
+        
+        try {
+            
+            await this._model.findByIdAndDelete(id);
+            return {
+                message: "user was successfully deleted",
+            }
+        } catch (error) {
+            throw error
+        }
+    }
     
 }
