@@ -35,6 +35,31 @@ export class controllerUser{
             throw error.message
         }
     }
-
-
+    async getUserById(id){
+        try {
+            const user = await this._model.findById(id);
+            if(user!=null){
+                return user
+            }else{
+                console.log("entro")
+                throw  new Error("Username does not exist");
+            }   
+        } catch (error) {
+            throw error.message
+        }
+    }
+    async updateUser(name){
+        try {
+            const user = await this._model.findOne({name});
+            if(user!=null){
+                return user
+            }else{
+                console.log("entro")
+                throw  new Error("Username does not exist");
+            }   
+        } catch (error) {
+            throw error.message
+        }
+    }
+    
 }
