@@ -8,7 +8,8 @@ const petSchema = new mongoose.Schema({
         trim:true,
     },
     profilePhoto:{
-        type:String
+        type:String,
+        default: ""
     },
     publicId:{
         type:String

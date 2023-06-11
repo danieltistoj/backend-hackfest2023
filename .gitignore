@@ -133,4 +133,4 @@ dist
 
 
 #Picture
-./uploads
+./uploads/*

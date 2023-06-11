@@ -24,6 +24,9 @@ const userSchema = new mongoose.Schema({
         required:false,
         trim:true,
     },
+    publicId:{
+        type:String
+    },
     matchList:{
         type: Array,
         default:[],
