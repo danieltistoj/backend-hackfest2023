@@ -25,9 +25,14 @@ export class controllerUser{
     async getUserByName(name){
         try {
             const user = await this._model.findOne({name});
-            return user
+            if(user!=null){
+                return user
+            }else{
+                console.log("entro")
+                throw  new Error("Username does not exist");
+            }   
         } catch (error) {
-            return error
+            throw error.message
         }
     }
 

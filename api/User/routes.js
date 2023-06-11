@@ -9,7 +9,7 @@ export class userRouter {
     registerRouter() {
         this._router.post('/create-user', this.handleCreateUser.bind(this));
         this._router.get('/all-users', this.handleAllUsers.bind(this));
-        this._router.get('/all-users', this.handleAllUsers.bind(this));
+        this._router.get('/getUserByName/:name', this. handleGetUserByName.bind(this));
     }
     async handleCreateUser(req, res) {
         try {
@@ -35,6 +35,19 @@ export class userRouter {
             const result = await this._controller.allUsers()
             this._response.succes(req, res, result, this._httpcode.OK);
             
+        } catch (error) {
+            this._response.error(req, res, error, this._httpcode.BAD_REQUEST);
+        }
+    }
+    async handleGetUserByName(req, res) {
+        try {
+            /*
+            console.log(req.body)
+            res.send(req.body)
+            */
+            const name = req.params.name
+            const result = await this._controller.getUserByName(name)
+            this._response.succes(req, res, result, this._httpcode.OK);
         } catch (error) {
             this._response.error(req, res, error, this._httpcode.BAD_REQUEST);
         }
