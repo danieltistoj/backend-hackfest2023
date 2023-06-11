@@ -38,6 +38,12 @@ const userSchema = new mongoose.Schema({
         default: "",
         required:false,
         trim:true,
+    },
+    rol:{
+        type:String,
+        default: "",
+        required:true,
+        trim:true,
     }
 });
 
