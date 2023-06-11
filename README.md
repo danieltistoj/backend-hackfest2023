@@ -66,7 +66,7 @@ npm run dev
  <div>
  <h2>User</h2>
    <h2>Data Model</h2>
-    <table align="center">
+    <table>
         <tr>
             <th>Field</th>
             <th>Type</th>
@@ -195,7 +195,7 @@ npm run dev
 
 <h2>Pet</h2>
     <h2>Data Model</h2>
-    <table align="center">
+    <table>
         <tr>
             <th>Field</th>
             <th>Type</th>
