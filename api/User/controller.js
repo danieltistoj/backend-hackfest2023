@@ -48,17 +48,15 @@ export class controllerUser{
             throw error.message
         }
     }
-    async updateUser(name){
+    async updateUserById(id,body){
         try {
-            const user = await this._model.findOne({name});
-            if(user!=null){
-                return user
-            }else{
-                console.log("entro")
-                throw  new Error("Username does not exist");
-            }   
+            await this._model.findByIdAndUpdate(id,body);
+            return {
+                message: "user updated successfully",
+                user: await this._model.findById(id)
+            }
         } catch (error) {
-            throw error.message
+            throw error
         }
     }
     
