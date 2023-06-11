@@ -18,6 +18,18 @@ const userSchema = new mongoose.Schema({
         trim:true,
         undefined:true,
     },
+    profilePhoto:{
+        type:String,
+        default: "",
+        required:false,
+        trim:true,
+    },
+    matchList:{
+        type: Array,
+        default:[],
+        required:false,
+        trim:true,
+    }
 });
 
 const User = mongoose.model('User',userSchema)
