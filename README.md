@@ -7,11 +7,11 @@
 <h1>Technologies</h1>
 </div>
 <div style="display: inline_block" align="center">
-  <img align="center" alt="Rafa-Csharp" height="50" width="200" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
-  <img align="center" alt="Rafa-Csharp" height="50" width="200" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
-  <img align="center" alt="Rafa-Csharp" height="50" width="200" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge">
-  <img align="center" alt="Rafa-Csharp" height="50" width="200" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white">
-  <img align="center" alt="Rafa-Csharp" height="200" width="200" src="https://github.com/danieltistoj/backend-hackfest2023/assets/42653664/09d36812-f963-4dc1-af7d-930f91f9114e"><p><Strong>Cloudinary</Strong></p>
+  <img align="center" alt="Rafa-Csharp" height="50" width="150" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+  <img align="center" alt="Rafa-Csharp" height="50" width="150" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
+  <img align="center" alt="Rafa-Csharp" height="50" width="150" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge">
+  <img align="center" alt="Rafa-Csharp" height="50" width="150" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white">
+  <img align="center" alt="Rafa-Csharp" height="50" width="150" src="https://github.com/danieltistoj/backend-hackfest2023/assets/42653664/5a066537-1ae7-4811-9948-aac8548eb155">
 </div>
 
 
